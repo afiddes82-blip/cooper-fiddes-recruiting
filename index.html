@@ -29,6 +29,10 @@ section{padding:72px 7vw}.section-title{font-size:42px;margin:0 0 32px;text-tran
 .gc-card:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(0,0,0,.3)}
 .gc-mark{width:52px;height:52px;flex:0 0 52px;border-radius:12px;background:var(--gc-navy);display:grid;place-items:center;font-size:19px;font-weight:1000;letter-spacing:-.08em;color:var(--gc-green);border:1px solid rgba(0,0,0,.08)}
 .gc-copy{min-width:0;display:flex;flex-direction:column;gap:3px}.gc-copy strong{font-size:15px;line-height:1.2}.gc-copy span{font-size:12px;color:#505761;line-height:1.3}.gc-copy small{font-size:11px;color:#747b84;font-weight:800;letter-spacing:.04em;text-transform:uppercase;margin-top:2px}.gc-arrow{margin-left:auto;font-size:20px;font-weight:900;color:#222}
+.hudl-card{display:flex;align-items:center;gap:14px;margin-top:22px;padding:14px 16px;border-radius:12px;background:linear-gradient(135deg,#fff 0%,#f2f4f7 100%);color:#111;border:1px solid #dfe3e8;max-width:470px;transition:transform .18s ease,box-shadow .18s ease}
+.hudl-card:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(0,0,0,.3)}
+.hudl-mark{width:94px;height:52px;flex:0 0 94px;border-radius:12px;background:#1d2026;display:flex;align-items:center;justify-content:center;gap:7px;color:#fff;border:1px solid rgba(0,0,0,.08);font-size:20px;font-weight:900;letter-spacing:-.04em}.hudl-mark img{width:26px;height:26px;object-fit:contain;display:block}
+.hudl-copy{min-width:0;display:flex;flex-direction:column;gap:3px}.hudl-copy strong{font-size:15px;line-height:1.2}.hudl-copy span{font-size:12px;color:#505761;line-height:1.3}.hudl-copy small{font-size:11px;color:#747b84;font-weight:800;letter-spacing:.04em;text-transform:uppercase;margin-top:2px}.hudl-arrow{margin-left:auto;font-size:20px;font-weight:900;color:#222}
 .academic{background:var(--light);color:#111}.academic p{color:#444;max-width:720px;line-height:1.65}.gpa{font-size:72px;font-weight:900;color:var(--red);line-height:1}
 .contact{text-align:center;padding:90px 7vw}.contact p{color:var(--muted);max-width:650px;margin:0 auto 28px;line-height:1.6}.button{display:inline-block;background:var(--red);padding:15px 22px;border-radius:7px;font-weight:800}.note{font-size:12px;color:#747982;margin-top:20px}
 footer{padding:28px 7vw;border-top:1px solid #262a30;color:#818690;font-size:12px;text-align:center}
@@ -45,7 +49,7 @@ footer{padding:28px 7vw;border-top:1px solid #262a30;color:#818690;font-size:12p
  .stats{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-right:0}
  .grid{grid-template-columns:1fr}
  section{padding:55px 6vw}.section-title{font-size:34px}
- .gc-card{max-width:100%;padding:13px}.gc-mark{width:46px;height:46px;flex-basis:46px}.gc-copy strong{font-size:14px}.gc-copy span{font-size:11px}.gc-arrow{font-size:18px}
+ .gc-card,.hudl-card{max-width:100%;padding:13px}.gc-mark{width:46px;height:46px;flex-basis:46px}.hudl-mark{width:86px;height:46px;flex-basis:86px}.hudl-mark img{width:23px;height:23px}.gc-copy strong,.hudl-copy strong{font-size:14px}.gc-copy span,.hudl-copy span{font-size:11px}.gc-arrow,.hudl-arrow{font-size:18px}
 }
 </style>
 </head>
@@ -89,8 +93,19 @@ footer{padding:28px 7vw;border-top:1px solid #262a30;color:#818690;font-size:12p
     <article class="card" id="football">
       <div class="tag">Football</div>
       <h3>Running Back · Middle Linebacker</h3>
-      <p>Freshman multi-position football player at Metamora Township High School. This section will house verified season statistics, measurables, honors, highlight film and full-game footage.</p>
-      <div class="coming">Film + verified stats coming soon</div>
+      <p>Freshman multi-position football player at Metamora Township High School. View Cooper's Hudl profile for football game film, highlights and his current football profile.</p>
+
+      <a class="hudl-card" href="https://www.hudl.com/profile/26437242/Cooper-Fiddes" target="_blank" rel="noopener noreferrer" aria-label="View Cooper Fiddes on Hudl">
+        <div class="hudl-mark" aria-hidden="true"><img src="https://www.hudl.com/favicon.ico" alt=""><span>hudl</span></div>
+        <div class="hudl-copy">
+          <strong>Cooper Fiddes on Hudl</strong>
+          <span>Football film · highlights · athlete profile</span>
+          <small>View Hudl Profile</small>
+        </div>
+        <div class="hudl-arrow" aria-hidden="true">↗</div>
+      </a>
+
+      <div class="coming">Verified season stats + curated recruiting film coming next</div>
     </article>
 
     <article class="card" id="baseball">
